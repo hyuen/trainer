@@ -13,10 +13,19 @@ This project uses a Raspberry Pi Zero and an Infrared Sensing Module
  * Connect the output of the sensor to a GPIO pin of the PiZero. You will need to add a debouncer circuit to avoid spurious measurements.
  * Run trainer.py
 
+## Electric diagram
+
+TODO
+
+
 ## Sample output
 
 After getting the output, it can be plotted as this
 
 ![](https://github.com/hyuen/trainer/blob/master/python/tracker.png)
 
-
+## Issues
+ * Fix the settings on the debouncer circuit
+ * Fix the settings of the Low Pass filter in trainer.py
+ * Generate plots automatically
+ * Plug to Strava
