@@ -1,4 +1,4 @@
-# Monitor cadence on a stationary bicycle trainer
+# DIY smart stationary bike
 
 This project uses a Raspberry Pi Zero and an Infrared Sensing Module to make a smart Trainer
 
