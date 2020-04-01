@@ -4,19 +4,21 @@
 
 import time
 import csv
+import sys
 from gpiozero import Button
 
 
 sample_interval = 0.01  # seconds
 
 
-def main():
+def main(args):
     sensor = Button(23)  # pin 23 is a GPIO port
 
     start = time.time()
 
     fields = ['time', 'value']
-    with open('trace1.csv', 'w', newline='') as tracefile:
+    print("logging to " + args[1])
+    with open(args[1], 'w', newline='') as tracefile:
         writer = csv.DictWriter(tracefile, fieldnames=fields)
         while True:
             now = time.time() - start
@@ -32,4 +34,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv)
