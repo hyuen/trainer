@@ -8,7 +8,7 @@ import sys
 from gpiozero import Button
 
 
-sample_interval = 0.01  # seconds
+sample_interval = 0.001  # seconds
 
 
 def main(args):
